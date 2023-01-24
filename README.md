@@ -10,7 +10,7 @@ Syftet med detta repo är att det skall fungera som er kod som ni får given. Ni
 
 Jag vill att ni tittar igenom koden, gör er bekväm med den så att ni förstår vad den gör. Testkör applikationen och se till att den beter sig som ni tänker er att den skall göra. Ni får i detta läge absolut lägga till en del console.log där ni känner för det.
 
-### Att köra applikationen
+### Att köra applikationen 
 
 När ni har klonat ner repot och skapat ert eget repo behöver ni köra följande kommandon:
 
