@@ -9,6 +9,42 @@ import { displayError } from "../ts/main";
 import * as functions from "../ts/functions"
 import * as main from "../ts/main";
 
+/* -------------------------------------------------------------------------- */
+/*                              Test for addTodo                              */
+/* -------------------------------------------------------------------------- */
+
+describe('test for function addTodo', () => {
+
+    test('should add new todo item', () => {
+
+        //arrange
+        let todo: Todo[] = []
+        let todoText = "New todo";
+        let todoLength = todo.length;
+
+        // act 
+        functions.addTodo(todoText, todo)
+
+        //assert
+        expect(todo.length).toBe(todoLength+1)
+        expect(todo[todo.length-1].text).toBe("New todo");
+    });
+
+    test('should not add new todo item', () => {
+
+        //arrange
+        let todo: Todo[] = []
+        let todoText = "x";
+        let defaultLength = todo.length;
+
+        //act
+        functions.addTodo(todoText, todo)
+
+        //assert
+        expect(todo.length).toBe(defaultLength);
+    });
+})
+
 
 /* -------------------------------------------------------------------------- */
 /*                             Test for changeTodo                            */

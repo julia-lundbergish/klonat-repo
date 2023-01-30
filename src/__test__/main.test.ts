@@ -5,9 +5,10 @@
 import { addTodo, changeTodo, removeAllTodos } from "../ts/functions";
 import { Todo } from "../ts/models/Todo";
 import { IAddResponse } from "../ts/models/IAddResult";
-import { displayError } from "../ts/main";
+import { displayError, createNewTodo } from "../ts/main";
 import * as functions from "../ts/functions"
 import * as main from "../ts/main";
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -142,6 +143,7 @@ describe('should use clearToDos-function', () => {
         expect(todoSpy).toHaveBeenCalled();
         });
 })
+
 
 
 
